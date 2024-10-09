@@ -32,7 +32,10 @@ export default function UrlShortener({ onUrlAdded }) {
       setIsSuccess(true)
       setTimeout(() => setIsSuccess(false), 3000)
     } catch (error) {
-      console.error('Error adding document: ', error)
+      console.error('Error adding document: ', error.message, error.code);
+      // Display error to user
+      setIsSuccess(false);
+      // You might want to set an error state here and display it in the UI
     } finally {
       setIsLoading(false)
     }

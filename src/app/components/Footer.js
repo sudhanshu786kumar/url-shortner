@@ -9,7 +9,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="font-bold hover:underline"
         >
-          Sudhanshu Kumar
+          Sudhanshu Kumar ❤️ 
         </a>
       </p>
     </footer>
